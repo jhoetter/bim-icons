@@ -24,6 +24,7 @@ export {
   RoomHifi,
   SectionHifi,
   FloorHifi,
+  AIHifi,
 } from './hifi';
 
 // Architectural hifi
@@ -49,6 +50,7 @@ export {
   PlumbingFixtureHifi,
   LightingFixtureHifi,
   MepSpaceHifi,
+  SoundHifi,
 } from './hifi-mep';
 
 // Structural hifi
@@ -382,6 +384,7 @@ export {
   FireSprinklerIcon,
   DiffuserIcon,
   MepSpaceIcon,
+  SoundIcon,
 } from './mep';
 
 // Structural
@@ -616,6 +619,7 @@ export {
   UndoIcon,
   RedoIcon,
   AgentIcon,
+  AIIcon,
   CollaboratorsIcon,
   OnlineIcon,
   DownloadIcon,

@@ -490,3 +490,31 @@ export const MepSpaceHifi = bimIconHifi(
     <line x1="10" y1="38" x2="14" y2="38" strokeWidth={1} strokeOpacity={0.3} />
   </>,
 );
+
+// ── Sound / Acoustic: vertical hatched wall with wave arcs showing attenuation ──
+// 3 bold arcs on left (loud input), 1 smaller arc on right (attenuated output).
+export const SoundHifi = bimIconHifi(
+  'SoundHifi',
+  <>
+    {/* Wall band with concrete hatch */}
+    <rect x="20" y="8" width="10" height="32" fill="currentColor" fillOpacity={0.07} />
+    <g strokeWidth={0.75} strokeOpacity={0.4}>
+      <line x1="20" y1="16" x2="26" y2="8" />
+      <line x1="20" y1="22" x2="30" y2="10" />
+      <line x1="20" y1="28" x2="30" y2="16" />
+      <line x1="20" y1="34" x2="30" y2="22" />
+      <line x1="20" y1="40" x2="30" y2="28" />
+      <line x1="24" y1="40" x2="30" y2="34" />
+    </g>
+    <line x1="20" y1="8" x2="30" y2="8" strokeWidth={2} />
+    <line x1="20" y1="40" x2="30" y2="40" strokeWidth={2} />
+    <line x1="20" y1="8" x2="20" y2="40" strokeWidth={2} />
+    <line x1="30" y1="8" x2="30" y2="40" strokeWidth={2} />
+    {/* Incoming waves — left, 3 arcs decreasing toward wall */}
+    <path d="M16 18A8 8 0 0 1 16 30" strokeWidth={1.5} />
+    <path d="M11 14A14 14 0 0 1 11 34" strokeWidth={1.2} />
+    <path d="M6 11A19 19 0 0 1 6 37" strokeWidth={0.75} strokeOpacity={0.5} />
+    {/* Attenuated wave — right, single smaller arc */}
+    <path d="M34 20A6 6 0 0 0 34 28" strokeWidth={1.5} />
+  </>,
+);

@@ -332,3 +332,28 @@ export const FloorHifi = bimIconHifi(
     />
   </>,
 );
+
+// ── AI / Sparkle: three-tier sparkle composition for AI assistant context ──────
+// Large central star + medium top-right star + accent dot bottom-left.
+// Soft fill on the main star gives depth without fill-color dependency.
+export const AIHifi = bimIconHifi(
+  'AIHifi',
+  <>
+    {/* Subtle glow behind main star */}
+    <circle cx="22" cy="24" r="18" fill="currentColor" fillOpacity={0.05} stroke="none" />
+    {/* Main large sparkle */}
+    <path
+      d="M22 8L26 20L38 24L26 28L22 40L18 28L6 24L18 20z"
+      fill="currentColor"
+      fillOpacity={0.08}
+      strokeWidth={1.5}
+    />
+    {/* Secondary sparkle, top-right */}
+    <path
+      d="M38 6L40 10L44 12L40 14L38 18L36 14L32 12L36 10z"
+      strokeWidth={1.2}
+    />
+    {/* Accent dot, bottom-left */}
+    <circle cx="10" cy="38" r="2.5" fill="currentColor" stroke="none" />
+  </>,
+);

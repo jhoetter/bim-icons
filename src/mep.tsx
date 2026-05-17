@@ -119,3 +119,15 @@ export const MepSpaceIcon = bimIcon(
     <path d="M9.2 9.2L14.8 14.8 M14.8 9.2L9.2 14.8" />
   </>,
 );
+
+// ── Sound / Acoustic: wall cross-section with attenuated wave arcs ─────────────
+// Vertical wall divides incoming waves (left, 2 arcs) from attenuated (right, 1 arc).
+export const SoundIcon = bimIcon(
+  'SoundIcon',
+  <>
+    <line x1="12" y1="3" x2="12" y2="21" />
+    <path d="M9 8A5 5 0 0 1 9 16" />
+    <path d="M5 6A9 9 0 0 1 5 18" />
+    <path d="M15 10A4 4 0 0 0 15 14" />
+  </>,
+);

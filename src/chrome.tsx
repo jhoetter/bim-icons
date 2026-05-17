@@ -124,6 +124,17 @@ export const AgentIcon = bimIcon(
   <path d="M12 2L14 9L21 12L14 15L12 22L10 15L3 12L10 9z M18 3L19 6L22 7L19 8L18 11L17 8L14 7L17 6z" />,
 );
 
+// Three-sparkle AI icon — distinct from the single-burst AgentIcon.
+// Composition: large star (left), medium star (top-right), small star (bottom-right).
+export const AIIcon = bimIcon(
+  'AIIcon',
+  <>
+    <path d="M10 3L12 7.5L16 9L12 10.5L10 15L8 10.5L4 9L8 7.5z" />
+    <path d="M19 2L20 5L23 6L20 7L19 10L18 7L15 6L18 5z" />
+    <path d="M19 15L19.75 17.25L22 18L19.75 18.75L19 21L18.25 18.75L16 18L18.25 17.25z" />
+  </>,
+);
+
 export const CollaboratorsIcon = bimIcon(
   'CollaboratorsIcon',
   <>
