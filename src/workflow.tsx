@@ -121,3 +121,105 @@ export const ScopeBoxIcon = bimIcon(
     <path d="M12 4V20 M4 12H20" strokeDasharray="3 2" />
   </>,
 );
+
+// ── EPD: environmental product declaration document with leaf mark ───────────
+export const EPDIcon = bimIcon(
+  'EPDIcon',
+  <>
+    <path d="M5 3H17L21 7V21H5z M17 3V7H21" />
+    <path d="M9 15C9 11 13 9 17 9C17 13 15 17 11 17C10 17 9 16 9 15z" />
+    <path d="M10 16L15 11" />
+  </>,
+);
+
+// ── Carbon impact: carbon cloud with downward impact indicator ───────────────
+export const CarbonImpactIcon = bimIcon(
+  'CarbonImpactIcon',
+  <>
+    <path d="M7 16H17A4 4 0 0 0 17 8C16 5 12 4 10 7A4 4 0 0 0 7 16z" />
+    <path d="M12 16V22 M9 19L12 22L15 19" />
+  </>,
+);
+
+// ── LCA export: life-cycle loop leaving as a downloadable document ───────────
+export const LCAExportIcon = bimIcon(
+  'LCAExportIcon',
+  <>
+    <path d="M5 12A7 7 0 0 1 17 7 M17 7H14 M17 7V4 M19 12A7 7 0 0 1 7 17 M7 17H10 M7 17V20" />
+    <path d="M14 13H21V21H14z M17.5 11V17 M15.5 15L17.5 17L19.5 15" />
+  </>,
+);
+
+// ── DIN 276: cost classification table with grouped hierarchy rows ───────────
+export const DIN276Icon = bimIcon(
+  'DIN276Icon',
+  <path d="M4 4H20V20H4z M4 8H20 M4 12H20 M4 16H20 M9 4V20 M7 6H9 M7 10H9 M7 14H9 M7 18H9" />,
+);
+
+// ── BOQ: bill of quantities with quantity and total columns ─────────────────
+export const BOQIcon = bimIcon(
+  'BOQIcon',
+  <path d="M4 4H20V20H4z M4 8H20 M4 12H20 M4 16H20 M13 4V20 M17 4V20 M6 6H11 M14 18H16 M18 18H19" />,
+);
+
+// ── Unit rate: pricing tag tied to a single measured unit ────────────────────
+export const UnitRateIcon = bimIcon(
+  'UnitRateIcon',
+  <>
+    <path d="M4 5H14L20 11L11 20L4 13z" />
+    <circle cx="9" cy="10" r="1.5" />
+    <path d="M14 9C12 9 12 12 14 12S16 15 14 15 M14 8V16" />
+  </>,
+);
+
+// ── Package: construction work package box with sealed top flaps ─────────────
+export const PackageIcon = bimIcon(
+  'PackageIcon',
+  <path d="M4 8L12 4L20 8V18L12 22L4 18z M4 8L12 12L20 8 M12 12V22 M8 6L16 10" />,
+);
+
+// ── Logistics: package moving along a routed delivery path ──────────────────
+export const LogisticsIcon = bimIcon(
+  'LogisticsIcon',
+  <>
+    <path d="M3 15H10V20H3z M14 4H21V9H14z" />
+    <path d="M10 17H12A4 4 0 0 0 16 13V9 M18 11L16 9L14 11" />
+  </>,
+);
+
+// ── Progress: schedule bars with completion check indicator ─────────────────
+export const ProgressIcon = bimIcon(
+  'ProgressIcon',
+  <>
+    <path d="M4 6H14 M4 11H18 M4 16H12" />
+    <path d="M15 17L18 20L22 14" />
+  </>,
+);
+
+// ── QA checklist: inspection checklist with pass/fail rows ──────────────────
+export const QAChecklistIcon = bimIcon(
+  'QAChecklistIcon',
+  <>
+    <path d="M5 3H19V21H5z M8 8L10 10L13 7 M8 14L10 16L13 13" />
+    <path d="M15 9H17 M15 15H17" />
+  </>,
+);
+
+// ── Selection set: dashed selection boundary grouping multiple elements ──────
+export const SelectionSetIcon = bimIcon(
+  'SelectionSetIcon',
+  <>
+    <path d="M4 4H20V20H4z" strokeDasharray="3 2" />
+    <path d="M7 8H12V13H7z M13 11H17V17H13z" />
+  </>,
+);
+
+// ── Review status: document review state with check and clock marker ─────────
+export const ReviewStatusIcon = bimIcon(
+  'ReviewStatusIcon',
+  <>
+    <path d="M5 3H19V21H5z M8 8H15 M8 12H13" />
+    <circle cx="15" cy="16" r="4" />
+    <path d="M15 14V16L17 17" />
+  </>,
+);

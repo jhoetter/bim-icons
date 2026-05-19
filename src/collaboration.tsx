@@ -22,6 +22,17 @@ export const EditingRequestIcon = bimIcon(
   </>,
 );
 
+// ── Penetration request: coordination request for a sleeve/opening through wall
+export const PenetrationRequestIcon = bimIcon(
+  'PenetrationRequestIcon',
+  <>
+    <path d="M4 3H18V21H4z M8 7H14 M8 17H13" />
+    <path d="M8 10H20V14H8z" />
+    <circle cx="14" cy="12" r="3" />
+    <path d="M18 6L22 10L18 14" />
+  </>,
+);
+
 // ── Copy/monitor: two elements linked by a monitoring connection ──────────────
 export const CopyMonitorIcon = bimIcon(
   'CopyMonitorIcon',

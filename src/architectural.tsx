@@ -37,6 +37,57 @@ export const RampIcon = bimIcon(
 // The stepped pyramid shape signals early-design volumetric massing.
 export const MassIcon = bimIcon('MassIcon', <path d="M3 20H21V10H17V6H13V3H11V6H7V10H3z" />);
 
+// ── Mass box: conceptual mass as a simple isometric volume ───────────────────
+export const MassBoxIcon = bimIcon(
+  'MassBoxIcon',
+  <path d="M4 9L12 4L20 9V18L12 22L4 18z M4 9L12 13L20 9 M12 13V22" />,
+);
+
+// ── Mass extrusion: profile pushed along a direction into a volume ───────────
+export const MassExtrusionIcon = bimIcon(
+  'MassExtrusionIcon',
+  <path d="M4 8H10V16H4z M10 8L17 5H21V13L10 16 M17 5V13 M14 10H22 M19 7L22 10L19 13" />,
+);
+
+// ── Mass revolution: profile revolved around a vertical axis ─────────────────
+export const MassRevolutionIcon = bimIcon(
+  'MassRevolutionIcon',
+  <>
+    <path d="M12 3V21" strokeDasharray="3 2" />
+    <path d="M8 6C4 8 4 16 8 18 M8 6H12 M8 18H12 M8 6C11 10 11 14 8 18" />
+    <path d="M15 6A6 6 0 0 1 15 18 M17 9L15 6L13 9" />
+  </>,
+);
+
+// ── Family blend: two profiles lofted between different elevations ───────────
+export const FamilyBlendIcon = bimIcon(
+  'FamilyBlendIcon',
+  <>
+    <path d="M6 7H14L18 11H10z M4 17H12L20 13H12z" />
+    <path d="M6 7L4 17 M14 7L12 17 M18 11L20 13 M10 11L12 13" />
+  </>,
+);
+
+// ── Family sweep: profile carried along a curved path ────────────────────────
+export const FamilySweepIcon = bimIcon(
+  'FamilySweepIcon',
+  <>
+    <path d="M5 17C8 8 15 8 19 5" />
+    <path d="M16 4L19 5L18 8" />
+    <path d="M4 14H8V18H4z" />
+  </>,
+);
+
+// ── Swept blend: path sweep interpolating between start/end profiles ─────────
+export const FamilySweptBlendIcon = bimIcon(
+  'FamilySweptBlendIcon',
+  <>
+    <path d="M5 17C8 9 15 9 19 6" />
+    <path d="M4 14H8V18H4z M16 4H21V9H16z" />
+    <path d="M8 16C11 13 14 10 16 7" strokeDasharray="3 2" />
+  </>,
+);
+
 // ── Curtain panel: single glazing unit with frame reveals and glazing X ───────
 export const CurtainPanelIcon = bimIcon(
   'CurtainPanelIcon',
@@ -65,5 +116,25 @@ export const PartitionIcon = bimIcon(
   <>
     <path d="M2 4H22V20H2z" />
     <path d="M11 4H13V20H11z" />
+  </>,
+);
+
+// ── Area: measured plan area with centroid marker and boundary hatch ─────────
+export const AreaIcon = bimIcon(
+  'AreaIcon',
+  <>
+    <path d="M4 5H20V19H4z" />
+    <path d="M4 19L18 5 M8 19L20 7 M4 15L14 5" />
+    <path d="M12 10V14 M10 12H14" />
+  </>,
+);
+
+// ── Plan region: local view-range region inside a plan view boundary ─────────
+export const PlanRegionIcon = bimIcon(
+  'PlanRegionIcon',
+  <>
+    <path d="M3 4H21V20H3z" />
+    <path d="M7 8H17V16H7z" strokeDasharray="3 2" />
+    <path d="M7 12H17 M12 8V16" />
   </>,
 );

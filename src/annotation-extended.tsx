@@ -24,6 +24,15 @@ export const RadialDimensionIcon = bimIcon(
   </>,
 );
 
+// ── Diameter dimension: circle measured through its full diameter ────────────
+export const DiameterDimensionIcon = bimIcon(
+  'DiameterDimensionIcon',
+  <>
+    <circle cx="12" cy="12" r="7" />
+    <path d="M5 12H19 M8 9L5 12L8 15 M16 9L19 12L16 15" />
+  </>,
+);
+
 // ── Arc length dimension: two concentric arcs with tick marks ────────────────
 export const ArcLengthDimensionIcon = bimIcon(
   'ArcLengthDimensionIcon',
@@ -96,6 +105,12 @@ export const InsulationAnnotationIcon = bimIcon(
 export const TextAnnotationIcon = bimIcon(
   'TextAnnotationIcon',
   <path d="M4 5H20 M12 5V19 M8 19H16" />,
+);
+
+// ── Leader text: text note with leader arrow pointing to model context ───────
+export const LeaderTextIcon = bimIcon(
+  'LeaderTextIcon',
+  <path d="M5 5H17 M5 9H15 M5 13H12 M12 13L20 20 M17 20H20V17" />,
 );
 
 // ── Multi-category tag: two connected tag bubbles for multi-element tagging ───

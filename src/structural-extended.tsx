@@ -84,3 +84,33 @@ export const BoundaryConditionIcon = bimIcon(
   'BoundaryConditionIcon',
   <path d="M8 8H16L12 16z M6 16H18 M4 18H20" />,
 );
+
+// ── Precast column: factory-cast column with lifting anchors ─────────────────
+export const PrecastColumnIcon = bimIcon(
+  'PrecastColumnIcon',
+  <>
+    <path d="M8 3H16V21H8z" />
+    <path d="M10 7H14 M10 17H14" />
+    <path d="M9 7C9 5 11 5 11 7 M13 7C13 5 15 5 15 7" />
+  </>,
+);
+
+// ── Precast beam: beam member with lifting loops at the top face ─────────────
+export const PrecastBeamIcon = bimIcon(
+  'PrecastBeamIcon',
+  <>
+    <path d="M3 10H21V16H3z" />
+    <path d="M7 10C7 7 10 7 10 10 M14 10C14 7 17 7 17 10" />
+    <path d="M5 16L7 19 M11 16L13 19 M17 16L19 19" />
+  </>,
+);
+
+// ── Precast slab: hollow-core slab plank with lift points ────────────────────
+export const PrecastSlabIcon = bimIcon(
+  'PrecastSlabIcon',
+  <>
+    <path d="M3 9H21V17H3z" />
+    <path d="M7 13H7.01 M12 13H12.01 M17 13H17.01" strokeWidth={2.5} />
+    <path d="M8 9C8 7 10 7 10 9 M14 9C14 7 16 7 16 9" />
+  </>,
+);

@@ -150,6 +150,67 @@ export const HVACZoneIcon = bimIcon(
   </>,
 );
 
+// ── U-value: insulated wall assembly with heat-flow arrow through layers ─────
+export const UValueIcon = bimIcon(
+  'UValueIcon',
+  <>
+    <path d="M5 5H19V19H5z M9 5V19 M15 5V19" />
+    <path d="M2 12H22 M18 9L22 12L18 15" />
+  </>,
+);
+
+// ── Thermal bridge: heat bypass crossing an insulated envelope junction ──────
+export const ThermalBridgeIcon = bimIcon(
+  'ThermalBridgeIcon',
+  <>
+    <path d="M4 5H12V19H4z M12 11H20V19H12z" />
+    <path d="M12 5V19" strokeDasharray="3 2" />
+    <path d="M6 8C10 6 14 14 18 12 M16 9L18 12L15 14" />
+  </>,
+);
+
+// ── Fire compartment: rated compartment boundary with flame marker ───────────
+export const FireCompartmentIcon = bimIcon(
+  'FireCompartmentIcon',
+  <>
+    <path d="M4 4H20V20H4z" />
+    <path d="M4 12H20 M12 4V20" strokeDasharray="3 2" />
+    <path d="M12 16C9 14 11 11 13 9C13 12 16 12 16 15A4 4 0 0 1 8 15" />
+  </>,
+);
+
+// ── Escape route: route path with exit arrow through a doorway ───────────────
+export const EscapeRouteIcon = bimIcon(
+  'EscapeRouteIcon',
+  <path d="M4 19V5H11 M11 8V5L16 8L11 11V8 M7 16C11 16 13 12 17 12H21 M18 9L21 12L18 15" />,
+);
+
+// ── Fire rating: wall/door rating badge with flame and tick mark ─────────────
+export const FireRatingIcon = bimIcon(
+  'FireRatingIcon',
+  <>
+    <path d="M4 6H20V18H4z" />
+    <path d="M9 15C7 13 9 10 11 8C11 11 14 11 14 14A3 3 0 0 1 9 15" />
+    <path d="M15 15L17 17L21 13" />
+  </>,
+);
+
+// ── Travel distance: measured egress path with distance ticks ────────────────
+export const TravelDistanceIcon = bimIcon(
+  'TravelDistanceIcon',
+  <path d="M3 18C7 10 11 20 15 12S19 6 21 8 M18 6L21 8L19 11 M6 15L8 17 M11 16L13 18 M16 11L18 13" />,
+);
+
+// ── Penetration: service sleeve passing through a rated wall ─────────────────
+export const PenetrationIcon = bimIcon(
+  'PenetrationIcon',
+  <>
+    <path d="M10 3H14V21H10z" />
+    <path d="M3 10H21V14H3z" />
+    <circle cx="12" cy="12" r="3" />
+  </>,
+);
+
 // ── Panel schedule: two-column electrical circuit schedule table ──────────────
 export const PanelScheduleIcon = bimIcon(
   'PanelScheduleIcon',

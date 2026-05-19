@@ -13,6 +13,18 @@ export const MoveIcon = bimIcon('MoveIcon', <path d="M5 5H13V13H5z M13 13L19 19 
 // ── Copy: two rectangles, one offset from the other ──────────────────────────
 export const CopyIcon = bimIcon('CopyIcon', <path d="M4 8H14V18H4z M10 4H20V14H10z" />);
 
+// ── Attach: two host elements connected by a shared attachment edge ──────────
+export const AttachIcon = bimIcon(
+  'AttachIcon',
+  <path d="M3 7H10V17H3z M14 7H21V17H14z M10 12H14 M12 9V15" />,
+);
+
+// ── Detach: attached elements separated with a release slash ─────────────────
+export const DetachIcon = bimIcon(
+  'DetachIcon',
+  <path d="M3 7H10V17H3z M14 7H21V17H14z M10 12H14 M16 4L8 20" />,
+);
+
 // ── Rotate: quarter arc with rotation arrowhead at end ───────────────────────
 export const RotateIcon = bimIcon(
   'RotateIcon',
@@ -62,6 +74,34 @@ export const WallJoinsIcon = bimIcon('WallJoinsIcon', <path d="M2 11H22V13H2z M1
 export const PaintMaterialIcon = bimIcon(
   'PaintMaterialIcon',
   <path d="M3 8H17V14H3z M17 10H20V13L19 14H17 M19 13V19" />,
+);
+
+// ── Linework: drafted line override applied with a pencil stroke ─────────────
+export const LineworkIcon = bimIcon(
+  'LineworkIcon',
+  <>
+    <path d="M3 17H12 M5 13H14 M7 9H16" />
+    <path d="M17 4L21 8L12 17L8 18L9 14z" />
+  </>,
+);
+
+// ── Cut geometry: cutter volume subtracting a notch from host geometry ───────
+export const CutGeometryIcon = bimIcon(
+  'CutGeometryIcon',
+  <>
+    <path d="M4 6H20V18H4z" />
+    <path d="M14 6V18 M14 6L20 12L14 18" strokeDasharray="3 2" />
+    <path d="M7 9L11 15 M11 9L7 15" />
+  </>,
+);
+
+// ── Create parts: host element divided into separately selectable parts ──────
+export const CreatePartsIcon = bimIcon(
+  'CreatePartsIcon',
+  <>
+    <path d="M4 5H20V19H4z M12 5V19 M4 12H20" />
+    <path d="M7 8H9 M15 8H17 M7 16H9 M15 16H17" />
+  </>,
 );
 
 // ── Measure between: two points with spanning dimension arrow ────────────────

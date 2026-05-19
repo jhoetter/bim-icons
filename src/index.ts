@@ -365,6 +365,7 @@ export {
   WallLayerIcon,
   PhaseIcon,
   IssueIcon,
+  IssueIcon as BCFIcon,
   ClashIcon,
   ValidationRuleIcon,
   DeviationIcon,
@@ -404,10 +405,18 @@ export {
   ShaftOpeningIcon,
   RampIcon,
   MassIcon,
+  MassBoxIcon,
+  MassExtrusionIcon,
+  MassRevolutionIcon,
+  FamilyBlendIcon,
+  FamilySweepIcon,
+  FamilySweptBlendIcon,
   CurtainPanelIcon,
   MullionIcon,
   SkyLightIcon,
   PartitionIcon,
+  AreaIcon,
+  PlanRegionIcon,
 } from './architectural';
 
 // Site & civil
@@ -419,6 +428,14 @@ export {
   RoadIcon,
   RetainingWallIcon,
   NorthArrowIcon,
+  SiteIcon,
+  ToposolidSubdivisionIcon,
+  TerrainPointIcon,
+  TerrainPadIcon,
+  TerrainSplitIcon,
+  GradedRegionIcon,
+  ProjectBasePointIcon,
+  SiteOriginIcon,
 } from './site';
 
 // Annotation & documentation
@@ -450,6 +467,18 @@ export {
   QuantityTakeoffIcon,
   EnergyModelIcon,
   ScopeBoxIcon,
+  EPDIcon,
+  CarbonImpactIcon,
+  LCAExportIcon,
+  DIN276Icon,
+  BOQIcon,
+  UnitRateIcon,
+  PackageIcon,
+  LogisticsIcon,
+  ProgressIcon,
+  QAChecklistIcon,
+  SelectionSetIcon,
+  ReviewStatusIcon,
 } from './workflow';
 
 // Edit / geometry operations
@@ -503,6 +532,9 @@ export {
   AnalyticalNodeIcon,
   StructuralLoadIcon,
   BoundaryConditionIcon,
+  PrecastColumnIcon,
+  PrecastBeamIcon,
+  PrecastSlabIcon,
 } from './structural-extended';
 
 // MEP extended
@@ -527,6 +559,14 @@ export {
   NurseCallIcon,
   SecurityDeviceIcon,
   HVACZoneIcon,
+  HVACZoneIcon as ThermalZoneIcon,
+  UValueIcon,
+  ThermalBridgeIcon,
+  FireCompartmentIcon,
+  EscapeRouteIcon,
+  FireRatingIcon,
+  TravelDistanceIcon,
+  PenetrationIcon,
   PanelScheduleIcon,
   DuctSystemIcon,
   PipingSystemIcon,
@@ -554,6 +594,7 @@ export {
 export {
   AngularDimensionIcon,
   RadialDimensionIcon,
+  DiameterDimensionIcon,
   ArcLengthDimensionIcon,
   OrdinalDimensionIcon,
   SpotCoordinateIcon,
@@ -564,6 +605,7 @@ export {
   RepeatingDetailIcon,
   InsulationAnnotationIcon,
   TextAnnotationIcon,
+  LeaderTextIcon,
   MultiCategoryTagIcon,
   MaterialTagIcon,
   RoomTagIcon,
@@ -579,6 +621,8 @@ export {
 export {
   MoveIcon,
   CopyIcon,
+  AttachIcon,
+  DetachIcon,
   RotateIcon,
   ScaleIcon,
   OffsetIcon,
@@ -588,6 +632,9 @@ export {
   SwitchJoinOrderIcon,
   WallJoinsIcon,
   PaintMaterialIcon,
+  LineworkIcon,
+  CutGeometryIcon,
+  CreatePartsIcon,
   MeasureBetweenIcon,
   MeasureAlongIcon,
   UngroupIcon,
@@ -635,6 +682,7 @@ export {
 export {
   ReloadLatestIcon,
   EditingRequestIcon,
+  PenetrationRequestIcon,
   CopyMonitorIcon,
   CoordinationReviewIcon,
   PurgeUnusedIcon,
